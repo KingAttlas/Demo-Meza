@@ -293,15 +293,15 @@ a{text-decoration:none;color:inherit}
 .demo-note a:hover{color:var(--red)}
 
 /* ============ BADGE FUTURABYTE ============ */
-.futura-badge{position:fixed;right:22px;bottom:96px;z-index:200;display:flex;align-items:center;gap:.6rem;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.5rem .95rem .5rem .8rem;box-shadow:0 14px 32px -12px rgba(18,34,79,.4);animation:badgeIn .6s var(--ease) both .5s;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
-.futura-badge:hover{transform:translateY(-3px);box-shadow:0 18px 36px -12px rgba(18,34,79,.5);border-color:#cfd8ea}
-.futura-badge .fb-dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;background:linear-gradient(135deg,var(--red),var(--blue));box-shadow:0 0 0 3px rgba(43,76,155,.14);animation:dotPulse 2.4s ease-in-out infinite}
+.futura-badge{position:fixed;right:22px;bottom:96px;z-index:200;display:flex;align-items:center;gap:.6rem;background:#0f1c1e;border:1px solid rgba(69,196,189,.38);border-radius:999px;padding:.5rem .95rem .5rem .8rem;box-shadow:0 14px 32px -12px rgba(0,0,0,.55),0 4px 18px -8px rgba(69,196,189,.35);animation:badgeIn .6s var(--ease) both .5s;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.futura-badge:hover{transform:translateY(-3px);box-shadow:0 18px 40px -12px rgba(0,0,0,.65),0 8px 26px -8px rgba(69,196,189,.6);border-color:rgba(101,235,172,.7)}
+.futura-badge .fb-dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;background:linear-gradient(135deg,#47d6cf,#65ebac);box-shadow:0 0 0 3px rgba(69,196,189,.22);animation:dotPulse 2.4s ease-in-out infinite}
 .futura-badge .fb-txt{display:flex;flex-direction:column;line-height:1.12}
-.futura-badge .fb-label{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
-.futura-badge strong{font-family:'Archivo',sans-serif;font-size:.95rem;font-weight:800;color:var(--navy);letter-spacing:-.01em}
-.futura-badge strong span{color:var(--red)}
+.futura-badge .fb-label{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(214,233,233,.55);font-weight:700}
+.futura-badge strong{font-family:'Archivo',sans-serif;font-size:.95rem;font-weight:800;color:#f1f6f6;letter-spacing:-.01em}
+.futura-badge strong span{background:linear-gradient(90deg,#47d6cf,#65ebac);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 @keyframes badgeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@keyframes dotPulse{0%,100%{box-shadow:0 0 0 3px rgba(43,76,155,.14)}50%{box-shadow:0 0 0 6px rgba(43,76,155,0)}}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 0 3px rgba(69,196,189,.25)}50%{box-shadow:0 0 0 6px rgba(69,196,189,0)}}
 
 /* ============ WHATSAPP FLOTANTE ============ */
 .wa-float{position:fixed;bottom:22px;right:22px;z-index:200;display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:#fff;padding:.75rem 1.1rem;border-radius:999px;font-weight:800;font-size:.92rem;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);transition:transform .3s var(--ease)}
