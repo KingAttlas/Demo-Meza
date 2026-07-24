@@ -1,8 +1,14 @@
-// ===== Header con sombra al hacer scroll =====
+// ===== Header con sombra + barra de progreso al hacer scroll =====
 const header = document.getElementById('header');
-window.addEventListener('scroll', () => {
+const progress = document.getElementById('scrollProgress');
+const onScroll = () => {
   header.classList.toggle('scrolled', window.scrollY > 8);
-}, { passive: true });
+  const h = document.documentElement;
+  const max = h.scrollHeight - h.clientHeight;
+  progress.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+};
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 // ===== Menú móvil =====
 const burger = document.getElementById('burger');

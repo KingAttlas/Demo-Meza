@@ -45,6 +45,8 @@
     <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2"/></symbol>
   </svg>
 
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ===== BARRA SUPERIOR ===== -->
   <div class="strip">
     <div class="container strip-inner">
@@ -58,14 +60,17 @@
   <header class="header" id="header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Materiales Meza">
-        <svg class="brand-house" viewBox="0 0 64 50" aria-hidden="true">
-          <path d="M6 30 32 6l26 24" />
-          <path d="M15 24 32 9l17 15" />
-          <path d="M13 27v20M51 27v20M13 47h38" />
-        </svg>
-        <span class="brand-lockup">
-          <span class="brand-top">MATERIALES</span>
-          <span class="brand-main">MEZA</span>
+        <img class="brand-logo" src="img/logo.png" alt="Materiales Meza" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='img/logo.jpg'}else{this.closest('.brand').classList.add('no-logo')}">
+        <span class="brand-fallback">
+          <svg class="brand-house" viewBox="0 0 64 50" aria-hidden="true">
+            <path d="M6 30 32 6l26 24" />
+            <path d="M15 24 32 9l17 15" />
+            <path d="M13 27v20M51 27v20M13 47h38" />
+          </svg>
+          <span class="brand-lockup">
+            <span class="brand-top">MATERIALES</span>
+            <span class="brand-main">MEZA</span>
+          </span>
         </span>
       </a>
       <nav class="nav" id="nav">
@@ -140,6 +145,17 @@
         <a href="#categorias"><svg class="ic"><use href="#i-mountain"/></svg> Agregados</a>
         <a href="#categorias"><svg class="ic"><use href="#i-bolt"/></svg> Eléctrico</a>
         <a href="#categorias"><svg class="ic"><use href="#i-tree"/></svg> Maderas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARCAS ===== -->
+  <section class="brands" aria-label="Marcas que trabajamos">
+    <div class="container brands-head"><span>Trabajamos las mejores marcas</span></div>
+    <div class="brands-viewport">
+      <div class="brands-track">
+        <span>UGACEM</span><span>HOLCIM</span><span>SUR COLOR</span><span>PREDECON</span><span>DURMAN</span><span>AMANCO</span><span>KATIVO</span><span>PROTECTO</span><span>ABONOS AGRO</span>
+        <span>UGACEM</span><span>HOLCIM</span><span>SUR COLOR</span><span>PREDECON</span><span>DURMAN</span><span>AMANCO</span><span>KATIVO</span><span>PROTECTO</span><span>ABONOS AGRO</span>
       </div>
     </div>
   </section>
@@ -256,32 +272,32 @@
     <div class="carousel" id="carousel">
       <div class="carousel-track">
         <article class="pcard">
-          <div class="pcard-top t-blue"><svg class="ic pic"><use href="#i-wall"/></svg><span class="pbadge">Más vendido</span></div>
+          <div class="pcard-img"><img src="img/cemento.jpg" alt="Sacos de cemento gris 50 kg" loading="lazy"><span class="pbadge">Más vendido</span></div>
           <div class="pcard-body"><h3>Cemento gris 50 kg</h3><p>Marcas líderes. Estructura y repello.</p>
             <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20del%20saco%20de%20cemento%2050kg" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
         </article>
         <article class="pcard">
-          <div class="pcard-top t-red"><svg class="ic pic"><use href="#i-layers"/></svg><span class="pbadge red">Alta demanda</span></div>
+          <div class="pcard-img"><img src="img/varilla.jpg" alt="Varilla de acero grado 40" loading="lazy"><span class="pbadge red">Alta demanda</span></div>
           <div class="pcard-body"><h3>Varilla grado 40</h3><p>#2, #3, #4 y #5. Corte y armado.</p>
             <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20de%20varilla%20grado%2040" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
         </article>
         <article class="pcard">
-          <div class="pcard-top t-blue"><svg class="ic pic"><use href="#i-wall"/></svg></div>
+          <div class="pcard-img"><img src="img/block.jpg" alt="Block de concreto" loading="lazy"></div>
           <div class="pcard-body"><h3>Block de concreto</h3><p>12×20×40 y 15×20×40. Descuento por volumen.</p>
             <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20de%20block%20de%20concreto" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
         </article>
         <article class="pcard">
-          <div class="pcard-top t-amber"><svg class="ic pic"><use href="#i-mountain"/></svg><span class="pbadge">Por m³</span></div>
+          <div class="pcard-img"><img src="img/arena.jpg" alt="Arena y piedra a granel" loading="lazy"><span class="pbadge">Por m³</span></div>
           <div class="pcard-body"><h3>Arena y piedra</h3><p>Agregados a granel directo en tu obra.</p>
             <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20de%20arena%20y%20piedra%20por%20metro" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
         </article>
         <article class="pcard">
-          <div class="pcard-top t-blue"><svg class="ic pic"><use href="#i-roller"/></svg></div>
+          <div class="pcard-img"><img src="img/pintura.jpg" alt="Pintura y acabados" loading="lazy"></div>
           <div class="pcard-body"><h3>Pintura y acabados</h3><p>Interior, exterior y anticorrosiva.</p>
             <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Cotizar%20pintura%20y%20acabados" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
         </article>
         <article class="pcard">
-          <div class="pcard-top t-red"><svg class="ic pic"><use href="#i-bolt"/></svg></div>
+          <div class="pcard-img"><img src="img/electrico.jpg" alt="Material eléctrico y cableado" loading="lazy"></div>
           <div class="pcard-body"><h3>Material eléctrico</h3><p>Cable, tubería EMT y luminarias.</p>
             <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Cotizar%20material%20el%C3%A9ctrico" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
         </article>
@@ -400,10 +416,13 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a class="brand brand-light" href="#top" aria-label="Materiales Meza">
-          <svg class="brand-house" viewBox="0 0 64 50" aria-hidden="true">
-            <path d="M6 30 32 6l26 24" /><path d="M15 24 32 9l17 15" /><path d="M13 27v20M51 27v20M13 47h38" />
-          </svg>
-          <span class="brand-lockup"><span class="brand-top">MATERIALES</span><span class="brand-main">MEZA</span></span>
+          <img class="brand-logo footer-logo" src="img/logo.png" alt="Materiales Meza" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='img/logo.jpg'}else{this.closest('.brand').classList.add('no-logo')}">
+          <span class="brand-fallback">
+            <svg class="brand-house" viewBox="0 0 64 50" aria-hidden="true">
+              <path d="M6 30 32 6l26 24" /><path d="M15 24 32 9l17 15" /><path d="M13 27v20M51 27v20M13 47h38" />
+            </svg>
+            <span class="brand-lockup"><span class="brand-top">MATERIALES</span><span class="brand-main">MEZA</span></span>
+          </span>
         </a>
         <p>Empresa familiar tica dedicada a la venta de materiales de construcción, con la mejor calidad en el servicio. Alajuela, Costa Rica.</p>
         <div class="socials">
