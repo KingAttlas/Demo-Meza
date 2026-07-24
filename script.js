@@ -1,22 +1,34 @@
-// ===== Navbar sombra al hacer scroll =====
-const nav = document.getElementById('nav');
+// ===== Header con sombra al hacer scroll =====
+const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 10);
+  header.classList.toggle('scrolled', window.scrollY > 8);
 }, { passive: true });
 
 // ===== Menú móvil =====
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  nav.classList.toggle('open');
 });
-navLinks.querySelectorAll('a').forEach(a =>
+nav.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
+    burger.classList.remove('open');
+    nav.classList.remove('open');
   })
 );
+
+// ===== Barra de cotización -> WhatsApp =====
+const WA = '50662251972';
+const quoteForm = document.getElementById('quoteForm');
+const quoteInput = document.getElementById('quoteInput');
+quoteForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const val = quoteInput.value.trim();
+  const base = 'Hola Materiales Meza, quiero cotizar';
+  const msg = val ? `${base}: ${val}` : `${base} materiales para mi proyecto`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+});
 
 // ===== Reveal al hacer scroll =====
 const io = new IntersectionObserver((entries) => {
@@ -42,8 +54,7 @@ const countObserver = new IntersectionObserver((entries) => {
     const tick = (now) => {
       const p = Math.min((now - start) / dur, 1);
       const eased = 1 - Math.pow(1 - p, 3);
-      const val = Math.floor(eased * target);
-      el.textContent = val.toLocaleString('es-CR') + suffix;
+      el.textContent = Math.floor(eased * target).toLocaleString('es-CR') + suffix;
       if (p < 1) requestAnimationFrame(tick);
       else el.textContent = target.toLocaleString('es-CR') + suffix;
     };
@@ -52,3 +63,14 @@ const countObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 counters.forEach(c => countObserver.observe(c));
+
+// ===== Carrusel de productos =====
+const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const step = () => {
+  const card = carousel.querySelector('.pcard');
+  return card ? card.offsetWidth + 21 : 300;
+};
+nextBtn.addEventListener('click', () => carousel.scrollBy({ left: step(), behavior: 'smooth' }));
+prevBtn.addEventListener('click', () => carousel.scrollBy({ left: -step(), behavior: 'smooth' }));

@@ -4,101 +4,227 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Materiales Meza | Todo para tu construcción en Alajuela</title>
-  <meta name="description" content="Materiales Meza S.A. — Empresa familiar tica con más de 30 años. Materiales de construcción, ferretería, acabados, agregados y más. Entrega a domicilio en Alajuela. Cotizá por WhatsApp." />
+  <meta name="description" content="Materiales Meza S.A. — Empresa familiar tica en Alajuela. Materiales de construcción, ferretería, acabados y agregados con entrega a domicilio. Cotizá tu proyecto por WhatsApp." />
   <meta property="og:title" content="Materiales Meza | Todo para tu construcción" />
   <meta property="og:description" content="Materiales, ferretería y acabados con entrega a domicilio en Alajuela. Cotizá por WhatsApp." />
-  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23F97316'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%230f172a' font-family='Arial'%3EM%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23fff'/%3E%3Cpath d='M20 52 50 24 80 52' fill='none' stroke='%23e1251b' stroke-width='8' stroke-linejoin='round'/%3E%3Ctext x='50' y='82' font-size='40' font-weight='900' text-anchor='middle' fill='%232b4c9b' font-family='Arial'%3EM%3C/text%3E%3C/svg%3E" />
 </head>
-<body>
+<body id="top">
 
-  <!-- ===== Barra superior ===== -->
-  <div class="topbar">
-    <div class="topbar-track">
-      <span>🏗️ Más de 30 años construyendo Alajuela junto a vos</span>
-      <span>🚚 Entrega a domicilio en toda la provincia</span>
-      <span>🕗 Lun a Sáb · 6:30 a.m. – 5:30 p.m.</span>
-      <span>📞 2442-3050</span>
-      <span>💬 WhatsApp 6225-1972</span>
-      <span>🏗️ Más de 30 años construyendo Alajuela junto a vos</span>
-      <span>🚚 Entrega a domicilio en toda la provincia</span>
-      <span>🕗 Lun a Sáb · 6:30 a.m. – 5:30 p.m.</span>
-      <span>📞 2442-3050</span>
-      <span>💬 WhatsApp 6225-1972</span>
+  <!-- ===== SPRITE DE ÍCONOS ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2z"/><path d="M13 9h4l3 3v4h-7z"/><circle cx="6" cy="18" r="1.7"/><circle cx="17" cy="18" r="1.7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L16 14l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9 17 20 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.8-5.4 2.8 1-6L3.3 9.4l6-.9z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4-3 7-7 8-4-1-7-4-7-8V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12l9-9h6v6l-9 9z"/><circle cx="14.5" cy="8.5" r="1.4"/></symbol>
+    <symbol id="i-wall" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12"/><path d="M3 12h18M8 6v6M16 6v6M12 12v6"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M15 5a4 4 0 00-4.9 5L4 16.1 6 18l6.1-6.1A4 4 0 0018 7l-2.4 2.4L14 7.8 16.4 5.4A4 4 0 0015 5z"/></symbol>
+    <symbol id="i-roller" viewBox="0 0 24 24"><rect x="4" y="4" width="12" height="5" rx="1"/><path d="M16 6.5h3v4h-8"/><path d="M11 10.5v3M11 13.5a2 2 0 00-2 2v5"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M3 19l6-10 4 6 2.5-3.5L21 19z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 13h5l-1 8 8-11h-5z"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 3l5 7h-3l3 5h-4v6h-2v-6H8l3-5H8z"/></symbol>
+    <symbol id="i-lamp" viewBox="0 0 24 24"><path d="M8.5 4h7l2 6.5H6.5z"/><path d="M12 10.5V17M9.5 20h5"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M13.5 4.5l6 6-2.2 2.2-6-6z"/><path d="M11.3 6.7 3.8 14.2l2 2 7.5-7.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></symbol>
+    <symbol id="i-chevL" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-chevR" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M7 7H4v6h4V9c0-1 .5-2 2-2M18 7h-3v6h4V9c0-1 .5-2 2-2"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.06 1.6 5.83L2 22l4.4-1.15a9.9 9.9 0 004.64 1.18c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.14c-.25.7-1.44 1.33-1.99 1.36-.53.05-1.02.24-3.43-.72-2.9-1.14-4.75-4.1-4.9-4.29-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.26-.29.57-.36.76-.36l.55.01c.18.01.42-.07.65.5.25.6.84 2.06.91 2.21.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.38-.42.5-.14.14-.28.3-.12.58.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.36-.23.61-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.11.07.65-.18 1.35z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4.5h-3c-2.2 0-3.8 1.6-3.8 3.8V11H7v3.5h3.2V22h3.6v-7.5h3l.5-3.5h-3.5V8.6c0-.4.4-.6.7-.6z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2"/></symbol>
+  </svg>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <div class="strip">
+    <div class="container strip-inner">
+      <span class="strip-item"><svg class="ic"><use href="#i-clock"/></svg> Lun a Sáb · 6:30 a.m. – 5:30 p.m.</span>
+      <span class="strip-item"><svg class="ic"><use href="#i-pin"/></svg> 2 sucursales en Alajuela</span>
+      <span class="strip-item strip-right"><svg class="ic"><use href="#i-phone"/></svg> 2442-3050 &nbsp;·&nbsp; WhatsApp 6225-1972</span>
     </div>
   </div>
 
-  <!-- ===== Navbar ===== -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#inicio" class="logo">
-        <span class="logo-mark">M</span>
-        <span class="logo-text">MATERIALES<strong>MEZA</strong></span>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Materiales Meza">
+        <svg class="brand-house" viewBox="0 0 64 50" aria-hidden="true">
+          <path d="M6 30 32 6l26 24" />
+          <path d="M15 24 32 9l17 15" />
+          <path d="M13 27v20M51 27v20M13 47h38" />
+        </svg>
+        <span class="brand-lockup">
+          <span class="brand-top">MATERIALES</span>
+          <span class="brand-main">MEZA</span>
+        </span>
       </a>
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav" id="nav">
         <a href="#categorias">Productos</a>
-        <a href="#ventajas">Ventajas</a>
-        <a href="#ofertas">Ofertas</a>
+        <a href="#diferencia">Por qué Meza</a>
+        <a href="#destacados">Destacados</a>
         <a href="#proceso">Cómo comprar</a>
         <a href="#sucursales">Sucursales</a>
       </nav>
-      <div class="nav-cta">
-        <a href="tel:24423050" class="btn-ghost">📞 2442-3050</a>
-        <a href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20cotizar%20materiales" target="_blank" rel="noopener" class="btn-wa">💬 Cotizar</a>
+      <div class="header-cta">
+        <a href="tel:24423050" class="btn btn-line"><svg class="ic"><use href="#i-phone"/></svg> 2442-3050</a>
+        <a href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20cotizar" target="_blank" rel="noopener" class="btn btn-red">Cotizar ahora</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="hero" id="inicio">
-    <div class="hero-bg">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="grid-lines"></div>
-    </div>
-    <div class="container hero-inner">
+  <section class="hero">
+    <div class="blueprint"></div>
+    <div class="container hero-grid">
       <div class="hero-copy reveal">
-        <span class="eyebrow">🇨🇷 Empresa familiar tica · Alajuela</span>
-        <h1>Todo lo que tu obra necesita, <span class="hl">en un solo lugar</span>.</h1>
-        <p class="lead">Desde el cemento hasta los acabados finales. Materiales de construcción, ferretería, agregados y más — con la asesoría honesta y los precios justos que solo una empresa de barrio te da.</p>
-        <div class="hero-actions">
-          <a href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="btn-primary big">💬 Cotizá gratis por WhatsApp</a>
-          <a href="#categorias" class="btn-outline big">Ver productos ↓</a>
-        </div>
-        <div class="hero-trust">
-          <div class="stars">★★★★★</div>
-          <span>Miles de constructores y familias ya confían en nosotros</span>
-        </div>
+        <span class="chip"><svg class="ic"><use href="#i-house"/></svg> Empresa familiar tica · Alajuela</span>
+        <h1>Construí con materiales de <span class="txt-red">confianza</span> y <span class="txt-blue">precio justo</span>.</h1>
+        <p class="lead">Desde el cemento hasta el último acabado. Todo lo que tu obra necesita, en un solo lugar y con la asesoría honesta de siempre.</p>
+
+        <form class="quote-bar" id="quoteForm">
+          <svg class="ic quote-ic"><use href="#i-search"/></svg>
+          <input type="text" id="quoteInput" placeholder="¿Qué materiales necesitás? Ej: cemento, varilla, block…" autocomplete="off" />
+          <button type="submit" class="btn btn-red">Pedir cotización</button>
+        </form>
+
+        <ul class="hero-trust">
+          <li><svg class="ic"><use href="#i-truck"/></svg> Entrega a domicilio</li>
+          <li><svg class="ic"><use href="#i-shield"/></svg> +30 años de trayectoria</li>
+          <li><svg class="ic"><use href="#i-tag"/></svg> Precios razonables</li>
+          <li><svg class="ic"><use href="#i-layers"/></svg> Todo en un lugar</li>
+        </ul>
       </div>
 
-      <div class="hero-card reveal">
-        <div class="floating-badge fb-1">🚚 Entrega hoy</div>
-        <div class="floating-badge fb-2">✅ Precio justo</div>
-        <div class="card-head">
-          <span class="dot"></span> Cotización rápida
-        </div>
-        <div class="quote-row"><span>Cemento UGACEM 50kg</span><strong>× 40</strong></div>
-        <div class="quote-row"><span>Varilla #3 grado 40</span><strong>× 25</strong></div>
-        <div class="quote-row"><span>Arena de tajo m³</span><strong>× 6</strong></div>
-        <div class="quote-row"><span>Block 12×20×40</span><strong>× 300</strong></div>
-        <div class="quote-total">
-          <span>Tu pedido</span>
-          <em>Listo para despacho</em>
-        </div>
-        <a href="https://wa.me/50662251972?text=Hola,%20necesito%20cemento,%20varilla,%20arena%20y%20block" target="_blank" rel="noopener" class="btn-wa full">Enviar por WhatsApp →</a>
+      <div class="hero-visual reveal">
+        <svg class="bp-scene" viewBox="0 0 400 360" aria-hidden="true">
+          <!-- líneas de cota -->
+          <g class="bp-dim">
+            <path d="M40 300 H360" /><path d="M40 296 v8 M360 296 v8" />
+            <path d="M370 60 V300" /><path d="M366 60 h8 M366 300 h8" />
+          </g>
+          <!-- casa plano -->
+          <g class="bp-house">
+            <path class="draw" d="M60 170 L200 60 L340 170" />
+            <path class="draw d2" d="M85 170 L200 82 L315 170" />
+            <path class="draw d3" d="M90 170 V300 H310 V170" />
+            <rect class="draw d4" x="130" y="215" width="55" height="85" />
+            <rect class="draw d5" x="225" y="215" width="55" height="55" />
+          </g>
+          <circle class="bp-node" cx="200" cy="60" r="5" />
+          <circle class="bp-node" cx="60" cy="170" r="5" />
+          <circle class="bp-node" cx="340" cy="170" r="5" />
+          <text class="bp-label" x="205" y="330">materiales · meza</text>
+        </svg>
+        <div class="visual-badge vb-1"><svg class="ic"><use href="#i-truck"/></svg> Entrega hoy</div>
+        <div class="visual-badge vb-2"><svg class="ic"><use href="#i-check"/></svg> Todo disponible</div>
       </div>
     </div>
 
-    <!-- Marcas marquee -->
-    <div class="brands">
-      <div class="brands-track">
-        <span>UGACEM</span><span>HOLCIM</span><span>SUR COLOR</span><span>PREDECON</span><span>ABONOS AGRO</span><span>DURMAN</span><span>AMANCO</span><span>KATIVO</span><span>PROTECTO</span>
-        <span>UGACEM</span><span>HOLCIM</span><span>SUR COLOR</span><span>PREDECON</span><span>ABONOS AGRO</span><span>DURMAN</span><span>AMANCO</span><span>KATIVO</span><span>PROTECTO</span>
+    <!-- Accesos rápidos -->
+    <div class="container">
+      <div class="quicknav reveal">
+        <a href="#categorias"><svg class="ic"><use href="#i-wall"/></svg> Construcción</a>
+        <a href="#categorias"><svg class="ic"><use href="#i-wrench"/></svg> Ferretería</a>
+        <a href="#categorias"><svg class="ic"><use href="#i-roller"/></svg> Acabados</a>
+        <a href="#categorias"><svg class="ic"><use href="#i-mountain"/></svg> Agregados</a>
+        <a href="#categorias"><svg class="ic"><use href="#i-bolt"/></svg> Eléctrico</a>
+        <a href="#categorias"><svg class="ic"><use href="#i-tree"/></svg> Maderas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORÍAS (BENTO) ===== -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="head reveal">
+        <span class="kicker">Nuestro catálogo</span>
+        <h2>Cada etapa de tu obra, <span class="txt-blue">cubierta</span></h2>
+        <p>Más de 5.000 productos de las mejores marcas. Tocá una categoría y cotizá al instante.</p>
+      </div>
+      <div class="bento">
+        <a class="tile tile-feature reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20materiales%20de%20construcci%C3%B3n" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-wall"/></svg></div>
+          <h3>Materiales de construcción</h3>
+          <p>Cemento, block, varilla, arena, piedra y tubería. La base firme de todo proyecto.</p>
+          <span class="tile-link">Cotizar <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tile tile-wide reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20ferreter%C3%ADa" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-wrench"/></svg></div>
+          <h3>Ferretería</h3>
+          <p>Herramientas, tornillería y cerrajería.</p>
+          <span class="tile-link">Cotizar <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tile reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20acabados%20y%20pintura" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-roller"/></svg></div>
+          <h3>Acabados y pintura</h3>
+          <p>Pisos, azulejos, pintura y enchapes.</p>
+          <span class="tile-link">Cotizar <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tile reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20agregados" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-mountain"/></svg></div>
+          <h3>Agregados</h3>
+          <p>Arena, piedra y lastre por m³.</p>
+          <span class="tile-link">Cotizar <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tile reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20iluminaci%C3%B3n%20y%20el%C3%A9ctrico" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-bolt"/></svg></div>
+          <h3>Iluminación y eléctrico</h3>
+          <p>Cable, tubería, luminarias y tomas.</p>
+          <span class="tile-link">Cotizar <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tile reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20maderas" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-tree"/></svg></div>
+          <h3>Maderas</h3>
+          <p>Formaleta, reglas y madera tratada.</p>
+          <span class="tile-link">Cotizar <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tile tile-cta tile-wide reveal" href="https://wa.me/50662251972?text=Tengo%20un%20proyecto%20de%20remodelaci%C3%B3n,%20quiero%20asesor%C3%ADa" target="_blank" rel="noopener">
+          <div class="tile-ic"><svg class="ic"><use href="#i-hammer"/></svg></div>
+          <h3>¿Remodelación completa?</h3>
+          <p>Contanos tu proyecto y te armamos la lista de materiales, con todo y entrega.</p>
+          <span class="tile-link">Hablemos <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIA (título sticky + cards) ===== -->
+  <section class="section alt" id="diferencia">
+    <div class="container diff-grid">
+      <div class="diff-aside reveal">
+        <span class="kicker">La diferencia Meza</span>
+        <h2>Más que una ferretería, tu <span class="txt-red">aliado de obra</span></h2>
+        <p>Somos una empresa familiar tica. Tratamos cada pedido —grande o pequeño— como si fuera nuestra propia casa. Esa es la ventaja de comprar con gente que conoce el oficio.</p>
+        <a href="https://wa.me/50662251972?text=Hola%20Meza,%20quiero%20asesor%C3%ADa%20para%20mi%20proyecto" target="_blank" rel="noopener" class="btn btn-red big">Pedí tu asesoría</a>
+      </div>
+      <div class="diff-list">
+        <div class="diff-card reveal">
+          <div class="diff-ic"><svg class="ic"><use href="#i-truck"/></svg></div>
+          <div><h3>Entrega a domicilio</h3><p>Llevamos tu pedido directo a la obra en toda la provincia. Vos seguís trabajando.</p></div>
+        </div>
+        <div class="diff-card reveal">
+          <div class="diff-ic"><svg class="ic"><use href="#i-house"/></svg></div>
+          <div><h3>Asesoría de verdad</h3><p>Te decimos qué material rinde mejor para tu proyecto. Nada de venderte de más.</p></div>
+        </div>
+        <div class="diff-card reveal">
+          <div class="diff-ic"><svg class="ic"><use href="#i-tag"/></svg></div>
+          <div><h3>Precio claro y justo</h3><p>Precios razonables, sin sorpresas ni letra chiquita. Lo que cotizamos es lo que pagás.</p></div>
+        </div>
+        <div class="diff-card reveal">
+          <div class="diff-ic"><svg class="ic"><use href="#i-layers"/></svg></div>
+          <div><h3>Todo en un solo lugar</h3><p>Miles de productos y marcas. Una sola parada para toda tu obra.</p></div>
+        </div>
       </div>
     </div>
   </section>
@@ -106,205 +232,98 @@
   <!-- ===== STATS ===== -->
   <section class="stats">
     <div class="container stats-grid">
-      <div class="stat reveal"><div class="num" data-count="30" data-suffix="+">0</div><p>Años de trayectoria</p></div>
+      <div class="stat reveal"><div class="num" data-count="30" data-suffix="+">0</div><p>Años sirviendo Alajuela</p></div>
       <div class="stat reveal"><div class="num" data-count="5000" data-suffix="+">0</div><p>Productos en inventario</p></div>
-      <div class="stat reveal"><div class="num" data-count="2">0</div><p>Sucursales en Alajuela</p></div>
+      <div class="stat reveal"><div class="num" data-count="2">0</div><p>Sucursales</p></div>
       <div class="stat reveal"><div class="num" data-count="98" data-suffix="%">0</div><p>Clientes satisfechos</p></div>
     </div>
   </section>
 
-  <!-- ===== CATEGORÍAS ===== -->
-  <section class="section" id="categorias">
+  <!-- ===== DESTACADOS (carrusel) ===== -->
+  <section class="section" id="destacados">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Nuestro catálogo</span>
-        <h2>Encontrá <span class="hl">todo</span> bajo un mismo techo</h2>
-        <p>No pierdas tiempo yendo de ferretería en ferretería. Aquí tenés cada etapa de tu proyecto cubierta.</p>
+      <div class="head head-row reveal">
+        <div>
+          <span class="kicker">Lo más pedido</span>
+          <h2>Productos <span class="txt-blue">estrella</span> de la semana</h2>
+        </div>
+        <div class="carousel-ctrl">
+          <button id="prevBtn" aria-label="Anterior"><svg class="ic"><use href="#i-chevL"/></svg></button>
+          <button id="nextBtn" aria-label="Siguiente"><svg class="ic"><use href="#i-chevR"/></svg></button>
+        </div>
       </div>
-      <div class="cat-grid">
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20materiales%20de%20construcci%C3%B3n" target="_blank" rel="noopener">
-          <div class="cat-icon">🧱</div>
-          <h3>Materiales de construcción</h3>
-          <p>Cemento, block, varilla, arena, piedra, tubería y todo para la estructura.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20ferreter%C3%ADa" target="_blank" rel="noopener">
-          <div class="cat-icon">🔧</div>
-          <h3>Ferretería</h3>
-          <p>Herramientas, tornillería, cerrajería y accesorios de todas las marcas.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20acabados" target="_blank" rel="noopener">
-          <div class="cat-icon">🎨</div>
-          <h3>Acabados y pintura</h3>
-          <p>Pisos, azulejos, pintura, enchapes y todo el detalle final de tu obra.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20agregados" target="_blank" rel="noopener">
-          <div class="cat-icon">⛰️</div>
-          <h3>Agregados</h3>
-          <p>Arena, piedra, lastre y materiales a granel — entregados por m³.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20iluminaci%C3%B3n%20y%20el%C3%A9ctrico" target="_blank" rel="noopener">
-          <div class="cat-icon">💡</div>
-          <h3>Iluminación y eléctrico</h3>
-          <p>Cable, tubería EMT, luminarias, tomas y todo el insumo eléctrico.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20maderas" target="_blank" rel="noopener">
-          <div class="cat-icon">🪵</div>
-          <h3>Maderas</h3>
-          <p>Formaleta, reglas, tablilla y madera tratada para cada trabajo.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal" href="https://wa.me/50662251972?text=Quiero%20cotizar%20decoraci%C3%B3n" target="_blank" rel="noopener">
-          <div class="cat-icon">🛋️</div>
-          <h3>Decoración</h3>
-          <p>Detalles, revestimientos y piezas que le dan carácter a tu espacio.</p>
-          <span class="cat-link">Cotizar →</span>
-        </a>
-        <a class="cat-card reveal accent" href="https://wa.me/50662251972?text=Quiero%20cotizar%20una%20remodelaci%C3%B3n" target="_blank" rel="noopener">
-          <div class="cat-icon">🏠</div>
-          <h3>Remodelación</h3>
-          <p>¿Un proyecto completo? Te armamos la lista y te la entregamos.</p>
-          <span class="cat-link">Hablemos →</span>
-        </a>
+    </div>
+    <div class="carousel" id="carousel">
+      <div class="carousel-track">
+        <article class="pcard">
+          <div class="pcard-top t-blue"><svg class="ic pic"><use href="#i-wall"/></svg><span class="pbadge">Más vendido</span></div>
+          <div class="pcard-body"><h3>Cemento gris 50 kg</h3><p>Marcas líderes. Estructura y repello.</p>
+            <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20del%20saco%20de%20cemento%2050kg" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top t-red"><svg class="ic pic"><use href="#i-layers"/></svg><span class="pbadge red">Alta demanda</span></div>
+          <div class="pcard-body"><h3>Varilla grado 40</h3><p>#2, #3, #4 y #5. Corte y armado.</p>
+            <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20de%20varilla%20grado%2040" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top t-blue"><svg class="ic pic"><use href="#i-wall"/></svg></div>
+          <div class="pcard-body"><h3>Block de concreto</h3><p>12×20×40 y 15×20×40. Descuento por volumen.</p>
+            <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20de%20block%20de%20concreto" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top t-amber"><svg class="ic pic"><use href="#i-mountain"/></svg><span class="pbadge">Por m³</span></div>
+          <div class="pcard-body"><h3>Arena y piedra</h3><p>Agregados a granel directo en tu obra.</p>
+            <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Precio%20de%20arena%20y%20piedra%20por%20metro" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top t-blue"><svg class="ic pic"><use href="#i-roller"/></svg></div>
+          <div class="pcard-body"><h3>Pintura y acabados</h3><p>Interior, exterior y anticorrosiva.</p>
+            <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Cotizar%20pintura%20y%20acabados" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top t-red"><svg class="ic pic"><use href="#i-bolt"/></svg></div>
+          <div class="pcard-body"><h3>Material eléctrico</h3><p>Cable, tubería EMT y luminarias.</p>
+            <a class="btn btn-wa full" href="https://wa.me/50662251972?text=Cotizar%20material%20el%C3%A9ctrico" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Cotizar</a></div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== VENTAJAS ===== -->
-  <section class="section alt" id="ventajas">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Por qué Materiales Meza</span>
-        <h2>La diferencia de comprar con <span class="hl">gente de confianza</span></h2>
-      </div>
-      <div class="feat-grid">
-        <div class="feat reveal">
-          <div class="feat-ic">🚚</div>
-          <h3>Entrega a domicilio</h3>
-          <p>Llevamos tu pedido a la obra en toda Alajuela. Vos seguís trabajando, nosotros cargamos.</p>
-        </div>
-        <div class="feat reveal">
-          <div class="feat-ic">💰</div>
-          <h3>Precios justos</h3>
-          <p>Precios razonables y honestos. Sin sorpresas, sin letras chiquitas.</p>
-        </div>
-        <div class="feat reveal">
-          <div class="feat-ic">🧑‍🔧</div>
-          <h3>Asesoría real</h3>
-          <p>Te decimos qué material rinde mejor para tu proyecto. Conocemos el oficio.</p>
-        </div>
-        <div class="feat reveal">
-          <div class="feat-ic">📦</div>
-          <h3>Todo en un lugar</h3>
-          <p>Miles de productos de las mejores marcas. Una sola parada, un solo pago.</p>
-        </div>
-        <div class="feat reveal">
-          <div class="feat-ic">👨‍👩‍👧</div>
-          <h3>Empresa familiar</h3>
-          <p>Somos ticos, de acá. Tratamos a cada cliente como parte de la casa.</p>
-        </div>
-        <div class="feat reveal">
-          <div class="feat-ic">⚡</div>
-          <h3>Cotización rápida</h3>
-          <p>Mandás tu lista por WhatsApp y te respondemos con precios al toque.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== OFERTAS / DESTACADOS ===== -->
-  <section class="section" id="ofertas">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">🔥 Más pedidos de la semana</span>
-        <h2>Productos <span class="hl">estrella</span></h2>
-        <p>Los materiales que más salen — cotizá el tuyo con un solo clic.</p>
-      </div>
-      <div class="prod-grid">
-        <div class="prod reveal">
-          <div class="prod-tag">Más vendido</div>
-          <div class="prod-img i1">🏗️</div>
-          <div class="prod-body">
-            <h3>Cemento gris 50 kg</h3>
-            <p>Marcas líderes. Ideal para estructura y repello.</p>
-            <div class="prod-foot">
-              <span class="price">Consultá precio</span>
-              <a href="https://wa.me/50662251972?text=Cu%C3%A1nto%20cuesta%20el%20saco%20de%20cemento%2050kg" target="_blank" rel="noopener" class="btn-wa sm">Cotizar</a>
-            </div>
-          </div>
-        </div>
-        <div class="prod reveal">
-          <div class="prod-tag hot">🔥 Alta demanda</div>
-          <div class="prod-img i2">🔩</div>
-          <div class="prod-body">
-            <h3>Varilla grado 40</h3>
-            <p>#2, #3, #4 y #5. Corte y armado disponible.</p>
-            <div class="prod-foot">
-              <span class="price">Consultá precio</span>
-              <a href="https://wa.me/50662251972?text=Precio%20de%20varilla%20grado%2040" target="_blank" rel="noopener" class="btn-wa sm">Cotizar</a>
-            </div>
-          </div>
-        </div>
-        <div class="prod reveal">
-          <div class="prod-img i3">🧱</div>
-          <div class="prod-body">
-            <h3>Block de concreto</h3>
-            <p>12×20×40 y 15×20×40. Descuento por volumen.</p>
-            <div class="prod-foot">
-              <span class="price">Consultá precio</span>
-              <a href="https://wa.me/50662251972?text=Precio%20de%20block%20de%20concreto" target="_blank" rel="noopener" class="btn-wa sm">Cotizar</a>
-            </div>
-          </div>
-        </div>
-        <div class="prod reveal">
-          <div class="prod-tag">Entrega x m³</div>
-          <div class="prod-img i4">⛰️</div>
-          <div class="prod-body">
-            <h3>Arena y piedra</h3>
-            <p>Agregados a granel entregados directo en tu obra.</p>
-            <div class="prod-foot">
-              <span class="price">Consultá precio</span>
-              <a href="https://wa.me/50662251972?text=Precio%20de%20arena%20y%20piedra%20por%20metro" target="_blank" rel="noopener" class="btn-wa sm">Cotizar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ofertas-cta reveal">
-        <p>¿No ves lo que buscás? Tenemos <strong>miles de productos más</strong>.</p>
-        <a href="https://wa.me/50662251972?text=Hola,%20busco%20un%20producto%20espec%C3%ADfico" target="_blank" rel="noopener" class="btn-primary">Preguntá por tu producto →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROCESO ===== -->
+  <!-- ===== PROCESO (timeline) ===== -->
   <section class="section alt" id="proceso">
     <div class="container">
-      <div class="section-head reveal">
+      <div class="head reveal">
         <span class="kicker">Así de fácil</span>
-        <h2>Comprá en <span class="hl">3 pasos</span></h2>
+        <h2>Comprar en Meza es <span class="txt-red">simple</span></h2>
       </div>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-num">1</div>
-          <h3>Mandá tu lista</h3>
-          <p>Escribinos por WhatsApp con lo que necesitás. Foto, nota de voz o texto — como te quede fácil.</p>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-node">1</div>
+          <div class="tl-content"><h3>Mandá tu lista</h3><p>Escribinos por WhatsApp lo que necesitás. Foto, nota de voz o texto — como te quede fácil.</p></div>
         </div>
-        <div class="step-arrow">→</div>
-        <div class="step reveal">
-          <div class="step-num">2</div>
-          <h3>Recibí tu cotización</h3>
-          <p>Te confirmamos disponibilidad y precio al momento. Ajustamos hasta que te cuadre.</p>
+        <div class="tl-item reveal">
+          <div class="tl-node">2</div>
+          <div class="tl-content"><h3>Recibí tu cotización</h3><p>Confirmamos disponibilidad y precio al momento. Ajustamos hasta que te cuadre.</p></div>
         </div>
-        <div class="step-arrow">→</div>
-        <div class="step reveal">
-          <div class="step-num">3</div>
-          <h3>Te lo llevamos</h3>
-          <p>Retiralo en tienda o te lo entregamos a la obra. Vos decidís.</p>
+        <div class="tl-item reveal">
+          <div class="tl-node">3</div>
+          <div class="tl-content"><h3>Retirá o te lo llevamos</h3><p>Pasá por la sucursal o te lo entregamos directo en la obra. Vos decidís.</p></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta">
+    <div class="cta-bp"></div>
+    <div class="container cta-inner reveal">
+      <div>
+        <h2>¿Empezamos tu proyecto hoy?</h2>
+        <p>Cotización gratis y sin compromiso. Te respondemos en minutos.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20cotizar%20mi%20proyecto" target="_blank" rel="noopener" class="btn btn-wa big"><svg class="ic ic--fill"><use href="#i-wa"/></svg> Escribinos por WhatsApp</a>
+        <a href="tel:24423050" class="btn btn-white big"><svg class="ic"><use href="#i-phone"/></svg> 2442-3050</a>
       </div>
     </div>
   </section>
@@ -312,40 +331,29 @@
   <!-- ===== TESTIMONIOS ===== -->
   <section class="section" id="testimonios">
     <div class="container">
-      <div class="section-head reveal">
+      <div class="head reveal">
         <span class="kicker">Lo que dice la gente</span>
-        <h2>Clientes que <span class="hl">vuelven</span></h2>
+        <h2>Clientes que <span class="txt-blue">vuelven</span></h2>
       </div>
-      <div class="test-grid">
-        <div class="test reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Encontré todo lo que necesitaba para mi casa en un solo lugar y me lo entregaron rapidísimo. Excelente atención."</p>
-          <div class="test-who"><span class="av">C</span><div><strong>Carlos M.</strong><em>Alajuela Centro</em></div></div>
-        </div>
-        <div class="test reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Precios muy razonables y el personal sabe de lo que habla. Me ayudaron a escoger el material correcto para el proyecto."</p>
-          <div class="test-who"><span class="av">M</span><div><strong>María F.</strong><em>Desamparados</em></div></div>
-        </div>
-        <div class="test reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Como maestro de obras, aquí compro siempre. Variedad, buen precio y me fían la entrega a la obra. De confianza."</p>
-          <div class="test-who"><span class="av">J</span><div><strong>José R.</strong><em>Maestro de obras</em></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== BANNER CTA ===== -->
-  <section class="cta-band">
-    <div class="container cta-inner reveal">
-      <div>
-        <h2>¿Listo para arrancar tu proyecto?</h2>
-        <p>Cotizá gratis y sin compromiso. Te respondemos en minutos.</p>
-      </div>
-      <div class="cta-btns">
-        <a href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20cotizar" target="_blank" rel="noopener" class="btn-wa big">💬 Escribinos por WhatsApp</a>
-        <a href="tel:24423050" class="btn-outline light big">📞 Llamar 2442-3050</a>
+      <div class="tgrid">
+        <figure class="tcard reveal">
+          <svg class="ic tquote"><use href="#i-quote"/></svg>
+          <div class="tstars"><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg></div>
+          <blockquote>Encontré todo lo que necesitaba para mi casa en un solo lugar y me lo entregaron rapidísimo. Excelente atención.</blockquote>
+          <figcaption><span class="av">C</span><span><strong>Carlos M.</strong><em>Alajuela centro</em></span></figcaption>
+        </figure>
+        <figure class="tcard reveal">
+          <svg class="ic tquote"><use href="#i-quote"/></svg>
+          <div class="tstars"><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg></div>
+          <blockquote>Precios muy razonables y el personal sabe de lo que habla. Me ayudaron a escoger el material correcto.</blockquote>
+          <figcaption><span class="av">M</span><span><strong>María F.</strong><em>Desamparados</em></span></figcaption>
+        </figure>
+        <figure class="tcard reveal">
+          <svg class="ic tquote"><use href="#i-quote"/></svg>
+          <div class="tstars"><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg></div>
+          <blockquote>Como maestro de obras compro siempre acá. Variedad, buen precio y entrega a la obra. De confianza.</blockquote>
+          <figcaption><span class="av">J</span><span><strong>José R.</strong><em>Maestro de obras</em></span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -353,31 +361,35 @@
   <!-- ===== SUCURSALES ===== -->
   <section class="section alt" id="sucursales">
     <div class="container">
-      <div class="section-head reveal">
+      <div class="head reveal">
         <span class="kicker">Visitanos</span>
-        <h2>Dos sucursales en <span class="hl">Alajuela</span></h2>
+        <h2>Dos sucursales en <span class="txt-red">Alajuela</span></h2>
         <p>Pasá a vernos o marcanos. Con gusto te atendemos.</p>
       </div>
       <div class="branches">
         <div class="branch reveal">
-          <h3>📍 Alajuela Centro</h3>
-          <p class="addr">Del Cementerio, 75 m norte. Alajuela centro.</p>
-          <ul class="branch-info">
-            <li>🕗 Lun a Sáb · 6:30 a.m. – 5:30 p.m.</li>
-            <li>📞 <a href="tel:24423050">2442-3050</a></li>
-            <li>💬 <a href="https://wa.me/50662251972" target="_blank" rel="noopener">WhatsApp 6225-1972</a></li>
-          </ul>
-          <a href="https://www.google.com/maps/search/?api=1&query=Materiales+Meza+Alajuela+centro" target="_blank" rel="noopener" class="btn-outline">Cómo llegar →</a>
+          <div class="branch-map"><svg class="ic"><use href="#i-pin"/></svg></div>
+          <div class="branch-body">
+            <h3>Alajuela Centro</h3>
+            <p class="addr">Del Cementerio, 75 m norte. Alajuela centro.</p>
+            <ul>
+              <li><svg class="ic"><use href="#i-clock"/></svg> Lun a Sáb · 6:30 a.m. – 5:30 p.m.</li>
+              <li><svg class="ic"><use href="#i-phone"/></svg> <a href="tel:24423050">2442-3050</a></li>
+            </ul>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Materiales+Meza+Alajuela+centro" target="_blank" rel="noopener">Cómo llegar <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
         </div>
         <div class="branch reveal">
-          <h3>📍 Desamparados de Alajuela</h3>
-          <p class="addr">Desamparados de Alajuela, C. Las Américas.</p>
-          <ul class="branch-info">
-            <li>🕗 Lun a Sáb · 6:30 a.m. – 5:30 p.m.</li>
-            <li>📞 <a href="tel:24300270">2430-0270</a></li>
-            <li>💬 <a href="https://wa.me/50662251972" target="_blank" rel="noopener">WhatsApp 6225-1972</a></li>
-          </ul>
-          <a href="https://www.google.com/maps/search/?api=1&query=Materiales+Meza+Desamparados+Alajuela" target="_blank" rel="noopener" class="btn-outline">Cómo llegar →</a>
+          <div class="branch-map"><svg class="ic"><use href="#i-pin"/></svg></div>
+          <div class="branch-body">
+            <h3>Desamparados de Alajuela</h3>
+            <p class="addr">Desamparados de Alajuela, C. Las Américas.</p>
+            <ul>
+              <li><svg class="ic"><use href="#i-clock"/></svg> Lun a Sáb · 6:30 a.m. – 5:30 p.m.</li>
+              <li><svg class="ic"><use href="#i-phone"/></svg> <a href="tel:24300270">2430-0270</a></li>
+            </ul>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Materiales+Meza+Desamparados+Alajuela" target="_blank" rel="noopener">Cómo llegar <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
         </div>
       </div>
     </div>
@@ -387,51 +399,44 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="#inicio" class="logo">
-          <span class="logo-mark">M</span>
-          <span class="logo-text">MATERIALES<strong>MEZA</strong></span>
+        <a class="brand brand-light" href="#top" aria-label="Materiales Meza">
+          <svg class="brand-house" viewBox="0 0 64 50" aria-hidden="true">
+            <path d="M6 30 32 6l26 24" /><path d="M15 24 32 9l17 15" /><path d="M13 27v20M51 27v20M13 47h38" />
+          </svg>
+          <span class="brand-lockup"><span class="brand-top">MATERIALES</span><span class="brand-main">MEZA</span></span>
         </a>
-        <p>Empresa familiar tica dedicada a la venta de materiales de construcción con la mejor calidad en el servicio. Alajuela, Costa Rica.</p>
+        <p>Empresa familiar tica dedicada a la venta de materiales de construcción, con la mejor calidad en el servicio. Alajuela, Costa Rica.</p>
         <div class="socials">
-          <a href="https://www.facebook.com/mat.construccion.meza" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-          <a href="https://www.instagram.com/materiales_meza/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
-          <a href="https://wa.me/50662251972" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+          <a href="https://www.facebook.com/mat.construccion.meza" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic ic--fill"><use href="#i-fb"/></svg></a>
+          <a href="https://www.instagram.com/materiales_meza/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></a>
+          <a href="https://wa.me/50662251972" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic ic--fill"><use href="#i-wa"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
         <h4>Productos</h4>
-        <a href="#categorias">Construcción</a>
-        <a href="#categorias">Ferretería</a>
-        <a href="#categorias">Acabados</a>
-        <a href="#categorias">Agregados</a>
-        <a href="#categorias">Iluminación</a>
+        <a href="#categorias">Construcción</a><a href="#categorias">Ferretería</a><a href="#categorias">Acabados</a><a href="#categorias">Agregados</a><a href="#categorias">Eléctrico</a>
       </div>
       <div class="footer-col">
         <h4>Empresa</h4>
-        <a href="#ventajas">Ventajas</a>
-        <a href="#proceso">Cómo comprar</a>
-        <a href="#testimonios">Opiniones</a>
-        <a href="#sucursales">Sucursales</a>
+        <a href="#diferencia">Por qué Meza</a><a href="#proceso">Cómo comprar</a><a href="#testimonios">Opiniones</a><a href="#sucursales">Sucursales</a>
       </div>
       <div class="footer-col">
         <h4>Contacto</h4>
-        <a href="tel:24423050">📞 2442-3050</a>
-        <a href="https://wa.me/50662251972" target="_blank" rel="noopener">💬 6225-1972</a>
-        <a href="mailto:info@materialesmeza.com">✉️ info@materialesmeza.com</a>
-        <a href="#sucursales">📍 Alajuela, Costa Rica</a>
+        <a href="tel:24423050"><svg class="ic"><use href="#i-phone"/></svg> 2442-3050</a>
+        <a href="https://wa.me/50662251972" target="_blank" rel="noopener"><svg class="ic ic--fill"><use href="#i-wa"/></svg> 6225-1972</a>
+        <a href="mailto:info@materialesmeza.com">info@materialesmeza.com</a>
+        <a href="#sucursales"><svg class="ic"><use href="#i-pin"/></svg> Alajuela, Costa Rica</a>
       </div>
     </div>
-    <div class="footer-bottom container">
+    <div class="container footer-bottom">
       <span>© 2026 Materiales Meza S.A. Todos los derechos reservados.</span>
       <span class="demo-note">Demo de sitio web · propuesta de diseño</span>
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20cotizar%20materiales" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
-    <span class="wa-icon">💬</span>
-    <span class="wa-label">Cotizá aquí</span>
-    <span class="wa-pulse"></span>
+  <a class="wa-float" href="https://wa.me/50662251972?text=Hola%20Materiales%20Meza,%20quiero%20cotizar%20materiales" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
+    <svg class="ic ic--fill"><use href="#i-wa"/></svg>
+    <span>Cotizá aquí</span>
   </a>
 
   <script src="script.js"></script>
