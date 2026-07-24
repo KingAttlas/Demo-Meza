@@ -288,7 +288,9 @@ a{text-decoration:none;color:inherit}
 .footer-col a .ic{width:16px;height:16px;color:var(--red)}
 .footer-col a:hover{color:#fff}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;font-size:.85rem;flex-wrap:wrap;gap:.5rem}
-.demo-note{color:#5a6a92;font-style:italic}
+.demo-note{color:#7a88ab;font-style:italic}
+.demo-note a{color:#fff;font-style:normal;font-weight:700;border-bottom:2px solid var(--red);padding-bottom:1px;transition:color .2s}
+.demo-note a:hover{color:var(--red)}
 
 /* ============ WHATSAPP FLOTANTE ============ */
 .wa-float{position:fixed;bottom:22px;right:22px;z-index:200;display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:#fff;padding:.75rem 1.1rem;border-radius:999px;font-weight:800;font-size:.92rem;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);transition:transform .3s var(--ease)}
